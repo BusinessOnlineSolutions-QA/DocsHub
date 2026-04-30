@@ -213,7 +213,7 @@ function LoginScreen({onLogin}) {
 
   return <>
     <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
-    <div style={{minHeight:"540px",display:"flex",alignItems:"center",justifyContent:"center",background:"#f4f6f9"}}>
+    <div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",background:"#f4f6f9"}}>
       <div style={{background:"#fff",border:"1px solid #e2e6ec",borderRadius:"14px",padding:"32px",width:"380px",boxShadow:"0 4px 24px rgba(0,0,0,.07)"}}>
         <div style={{display:"flex",alignItems:"center",gap:"10px",justifyContent:"center",marginBottom:"22px"}}>
           <div style={{width:36,height:36,background:"#2564eb00",borderRadius:"10px",display:"flex",alignItems:"center",justifyContent:"center"}}>
