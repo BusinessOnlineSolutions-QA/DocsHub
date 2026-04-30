@@ -73,7 +73,7 @@ function ini(name) {
 
 // ─── STYLES ──────────────────────────────────────────────────────
 const G = {
-  wrap:   {display:"flex",minHeight:"600px",maxHeight:"700px",background:"#f4f6f9",fontFamily:"'Inter',system-ui,sans-serif",fontSize:"13px",color:"#1a1d23"},
+  wrap:   {display:"flex",minHeight:"100vh",background:"#f4f6f9",fontFamily:"'Inter',system-ui,sans-serif",fontSize:"13px",color:"#1a1d23"},
   sb:     {width:"205px",background:"#fff",borderRight:"1px solid #e2e6ec",display:"flex",flexDirection:"column",flexShrink:0,overflowY:"auto"},
   main:   {flex:1,minWidth:0,padding:"16px",overflowY:"auto"},
   topbar: {display:"flex",alignItems:"flex-start",justifyContent:"space-between",marginBottom:"14px",gap:"8px"},
