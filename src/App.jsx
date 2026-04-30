@@ -217,7 +217,7 @@ function LoginScreen({onLogin}) {
       <div style={{background:"#fff",border:"1px solid #e2e6ec",borderRadius:"14px",padding:"32px",width:"380px",boxShadow:"0 4px 24px rgba(0,0,0,.07)"}}>
         <div style={{display:"flex",alignItems:"center",gap:"10px",justifyContent:"center",marginBottom:"22px"}}>
           <div style={{width:36,height:36,background:"#2564eb00",borderRadius:"10px",display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <img style={{width:50,height:55,fill:"#fff"}} viewBox="0 0 24 24" src="/public/favicon.png"></img>
+            <img style={{width:50,height:55,fill:"#fff"}} viewBox="0 0 24 24" src="./favicon.png"></img>
           </div>
           <div><div style={{fontSize:"17px",fontWeight:700}}>DocsHub</div><div style={{fontSize:"10px",color:"#9ca3af"}}>Centralized Documentation Portal</div></div>
         </div>
