@@ -80,7 +80,7 @@ const G = {
   card:   {background:"#fff",border:"1px solid #e2e6ec",borderRadius:"9px",overflow:"hidden",marginBottom:"12px"},
   stats:  {display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"8px",marginBottom:"14px"},
   stat:   {background:"#fff",border:"1px solid #e2e6ec",borderRadius:"9px",padding:"11px 13px"},
-  cg:     {display:"grid",gridTemplateColumns:"1fr 1fr",gap:"8px"},
+  cg:     {display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:"8px", padding:"10px", borderRadius:"10px", gap:"10px"},
   ov:     {position:"fixed",inset:0,background:"rgba(10,14,24,.45)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:1000,padding:"16px"},
   mo:     {background:"#fff",borderRadius:"13px",border:"1px solid #e2e6ec",width:"100%",maxWidth:"500px",maxHeight:"90vh",display:"flex",flexDirection:"column"},
   mH:     {display:"flex",alignItems:"center",padding:"14px 17px",borderBottom:"1px solid #f0f2f5",flexShrink:0},
@@ -95,6 +95,7 @@ const G = {
   r2:     {display:"grid",gridTemplateColumns:"1fr 1fr",gap:"10px",marginBottom:"0"},
   etxt:   {fontSize:"10px",color:"#dc2626",marginTop:"3px"},
   dr:     {display:"flex",alignItems:"center",gap:"9px",padding:"9px 13px",borderBottom:"1px solid #f4f6f9",transition:"background .1s"},
+  cc:{backgroundColor:"#ddd", padding:"10px", borderRadius:"10px"}
 };
 
 // ─── ATOMS ───────────────────────────────────────────────────────
@@ -552,7 +553,7 @@ function PageClients({clients,clientDocs,isAdmin,isEditor,loading,onAdd,onEdit,o
           <div style={{display:"flex",alignItems:"center",gap:"9px",marginBottom:"8px"}}>
             <div style={{width:32,height:32,borderRadius:"9px",background:col.bg,color:col.cl,display:"flex",alignItems:"center",justifyContent:"center",fontSize:"11px",fontWeight:700,flexShrink:0}}>{ini(c.name)}</div>
             <div style={{flex:1,minWidth:0}}>
-              <div style={{fontSize:"12px",fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{c.name}</div>
+              <div style={{fontSize:"12px",fontWeight:700,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{c.name?.length >32 ? `${c.name.slice(0,32)}...` : c.name}</div>
               <div style={{fontSize:"10px",color:"#9ca3af"}}>{c.kind}</div>
             </div>
             <span style={{fontSize:"9px",padding:"2px 7px",borderRadius:"9px",fontWeight:600,background:c.status==="live"?"#ecfdf5":c.status==="prospect"?"#fffbeb":"#f4f6f9",color:c.status==="live"?"#065f46":c.status==="prospect"?"#92400e":"#6b7280",flexShrink:0}}>{c.status}</span>
