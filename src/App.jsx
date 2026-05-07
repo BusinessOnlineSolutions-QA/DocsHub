@@ -75,7 +75,7 @@ function ini(name) {
 const G = {
   wrap:   {display:"flex",minHeight:"100vh",background:"#f4f6f9",fontFamily:"'Inter',system-ui,sans-serif",fontSize:"13px",color:"#1a1d23"},
   sb:     {width:"205px",background:"#fff",borderRight:"1px solid #e2e6ec",display:"flex",flexDirection:"column",flexShrink:0,overflowY:"auto"},
-  main:   {flex:1,minWidth:0,padding:"16px",overflowY:"auto"},
+  main:   {flex:1,minWidth:0,padding:"16px",overflowY:"auto",height:"100vh"},
   topbar: {display:"flex",alignItems:"flex-start",justifyContent:"space-between",marginBottom:"14px",gap:"8px"},
   card:   {background:"#fff",border:"1px solid #e2e6ec",borderRadius:"9px",overflow:"hidden",marginBottom:"12px"},
   stats:  {display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"8px",marginBottom:"14px"},
